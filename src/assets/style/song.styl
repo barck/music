@@ -1,0 +1,144 @@
+.song
+  .top-tags-song
+    margin-bottom 20px
+  .download-btn
+    padding 8px
+    padding-left 32px
+    &:after
+      width 18px
+      height 18px
+      top 6px
+.download-song-block
+  margin-bottom 20px
+  .download-btn
+    margin-right 20px
+  .play-song-btn
+    &:after
+      background url(../img/play-icon3.png)
+      background-size contain
+    &:hover
+      background rgba(26,229,140,0.05);
+    &:hover:after
+      background url(../img/play-icon3-hover.png)
+      background-size contain
+  .share-song-btn
+    &:after
+      background url(../img/share-link.png)
+      background-size contain
+    &:hover
+      background rgba(26,229,140,0.05);
+    &:hover:after
+      background url(../img/share-link-hover.png)
+      background-size contain
+.song-content
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+  margin-bottom 20px
+  .img-container
+    width 30%
+    img
+      max-width 100%
+  .song-content-text
+    width 70%
+    padding 10px 20px
+    padding-right 0
+    padding-top 0
+    color #7b7b7b
+    font-weight 100
+    p
+      margin 5px
+    .song-desc
+      margin-top 0
+    .song-artist,
+    .song-duration,
+    .song-size,
+    .song-bitrate,
+    .song-artist-social
+      display flex
+      flex-wrap wrap
+      justify-content space-between
+      align-items center
+      a
+        color #7b7b7b
+    .social-icon
+      display inline-block
+      width 30px
+      height 30px
+      margin-right 5px
+    .social-icon.vk
+      background url(../img/social-vk.png)
+      background-size contain
+      &:hover
+        background url(../img/social-vk-hover.png)
+        background-size contain
+    .social-icon.youtube
+      background url(../img/social-youtube.png)
+      background-size contain
+      &:hover
+        background url(../img/social-youtube-hover.png)
+        background-size contain
+    .social-icon.instagram
+      background url(../img/social-instagram.png)
+      background-size contain
+      &:hover
+        background url(../img/social-instagram-hover.png)
+        background-size contain
+.song-clip
+  height: 0
+  position: relative
+  padding-bottom: 56.25%
+  margin-bottom 20px
+  iframe
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+.song-lirics
+  width 100%
+  box-shadow inset 0px -190px 190px -50px #121212
+.lirics-head
+  margin-bottom 10px
+.song-lirics-text
+  height: 200px;
+  overflow: hidden;
+  font-weight 100
+  color #7b7b7b
+  column-width: 300px;
+  column-count: 2;
+  position:relative;
+  z-index:-1;
+.full-lirics
+  height auto
+  overflow auto
+.remove-shadow
+  box-shadow none
+.show-lirics
+  cursor pointer
+  padding 10px
+  // color #00854c
+  color #a2a2a2
+  display block
+  text-align center
+  margin-bottom 20px
+  // border 1px solid #00854c40
+  border 1px solid #a2a2a285
+  font-weight 100
+  &:hover
+    background: rgba(26, 229, 140, 0.05);
+
+.all-songs
+  cursor pointer
+  padding 10px
+  // color #00854c
+  color #a2a2a2
+  display block
+  text-align center
+  margin-bottom 20px
+  // border 1px solid #00854c40
+  border 1px solid #a2a2a285
+  font-weight 100
+  &:hover
+    background: rgba(26, 229, 140, 0.05);

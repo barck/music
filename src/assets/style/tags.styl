@@ -1,0 +1,193 @@
+.top-tags-song
+  width 100%
+  margin-bottom 30px
+  @media(max-width 768px)
+    width 100%
+  .top-tags-head
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    width 100%
+    align-items center
+    margin-bottom 10px
+  .tag-item
+    display flex
+    justify-content space-between
+    align-items center
+    width 100%
+    margin-bottom 15px
+    position relative
+    // background #4242422e
+    border-radius 5px
+    &:hover
+      background: rgba(26, 229, 140, 0.05);
+    .play-btn
+      width 30px
+      height 28px
+      background url(../img/play-icon3.png)
+      background-size contain
+      cursor pointer
+      display block
+      @media(max-width 768px)
+        margin-left 20px
+        margin-right 20px
+        height 24px
+      &:hover
+        background url(../img/play-icon3-hover.png)
+        background-size contain
+    .download-song-btn
+      width 25px
+      height 25px
+      background url(../img/download-link1.png)
+      background-size contain
+      cursor pointer
+      &:hover
+        background url(../img/download-link-hover.png)
+        background-size contain
+    .song-desc
+      display inline-block
+      width 82%
+      .song-attr
+        width 75%
+        display flex
+        justify-content space-between
+        color #a2a2a2
+        @media(max-width 768px)
+          width 65%
+        .song-name-title
+          font-size 16px
+          font-weight 400
+          a
+            text-decoration none
+            color #a2a2a2
+            &:hover
+              text-decoration underline
+        .song-group-title
+          font-size 14px
+          font-weight 100
+      .song-sub-flex
+        width 100%
+        display flex
+        flex-wrap wrap
+        justify-content space-between
+        align-items center
+      .duration
+        margin-right 20px
+        color #a2a2a2
+        @media(max-width 768px)
+          margin-right 0
+    img
+      width 50px
+      height 50px
+.top-tags-block
+  width 640px
+  @media(max-width 768px)
+    width 100%
+  .top-tags-head
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    width 100%
+    align-items center
+    margin-bottom 10px
+  .tags-flex
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+  .tag-item
+    display block
+    width 150px
+    height 150px
+    text-decoration none
+    text-align center
+    &:nth-child(4n)
+      margin-bottom 20px
+    &:hover
+      filter brightness(150%)
+    span
+      display block
+      color #ffffff
+      margin-top 110px
+      font-size 18px
+      font-weight 100
+      text-decoration none
+  .top
+    background url(../img/tags/top.png)
+    background-size contain
+  .sport
+    background url(../img/tags/sport.png)
+    background-size contain
+  .dance
+    background url(../img/tags/dance.png)
+    background-size contain
+  .travel
+    background url(../img/tags/travel.png)
+    background-size contain
+  .relax
+    background url(../img/tags/relax.png)
+    background-size contain
+  .new
+    background url(../img/tags/new.png)
+    background-size contain
+  .dushevnaya
+    background url(../img/tags/dushevnaya.png)
+    background-size contain
+  .summer
+    background url(../img/tags/summer.png)
+    background-size contain
+
+.tags-head
+    display block
+    font-size 20px
+    font-weight 100
+    margin-bottom 5px
+    color #7b7b7b
+    @media(max-width 768px)
+      font-size 16px
+  .tags-subhead
+    display block
+    font-size 12px
+    font-weight 400
+    color #7b7b7b
+    margin-bottom 10px
+    @media(max-width 768px)
+      font-size 10px
+
+.download-btn
+  display inline-block
+  padding 10px
+  font-weight 400
+  font-size 14px
+  border-radius 3px
+  border 1px solid #118e57a6
+  color #118e57
+  text-decoration none
+  position relative
+  padding-left 40px
+  @media(max-width 768px)
+    font-size 12px
+    padding 7px
+    padding-left 30px
+  &:after
+    content ''
+    position absolute
+    width 25px
+    height 25px
+    top 5px
+    left 8px
+    background url(../img/download-link1.png)
+    background-size contain
+    @media(max-width 768px)
+      width 20px
+      height 20px
+      top 4px
+      left 6px
+  &:hover
+    background rgba(26,229,140,0.05);
+  &:hover:after
+    background url(../img/download-link-hover.png)
+    background-size contain
+
+.item-playing
+  background url(../img/pause-icon.png)!important
+  background-size contain!important

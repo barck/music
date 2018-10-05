@@ -1,0 +1,164 @@
+.audio-player,
+.audio-player div,
+.audio-player .player-title,
+.audio-player a,
+.audio-player img,
+.audio-player span,
+.audio-player button 
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+
+.audio-player
+	z-index 100
+	position: fixed;
+	bottom: 0;
+	height: 60px;
+	width 100%
+	.container
+		background: #1a1a1a;
+		position relative
+		margin 0 auto
+
+.audio-player .player-title 
+	position: absolute;
+	top: 25px;
+	left: 125px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #008e4f;
+
+.audio-player .cover 
+	position: absolute;
+	top: 5px;
+	left: 0;
+	height: 55px;
+
+.mejs-controls .mejs-button button 
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	text-indent: -9999px;
+
+.mejs-controls .mejs-play button,
+.mejs-controls .mejs-pause button 
+	width: 21px;
+	height: 21px;
+	top: 18px;
+	left: 75px;
+	width 30px
+	height 30px
+	background url(../img/play-icon3.png)
+	background-size contain
+	cursor pointer
+	&:hover
+		background url(../img/play-icon3-hover.png)
+		background-size contain
+
+.mejs-controls .mejs-pause button
+	background url(../img/pause-icon.png)
+	background-size contain
+	&:hover
+		background url(../img/pause-icon-hover.png)
+		background-size contain
+
+.mejs-controls .mejs-mute button,
+.mejs-controls .mejs-unmute button
+	width: 30px;
+	height: 30px;
+	top: 15px;
+	right: 25px;
+	background url(../img/unmute-icon.png)
+	background-size contain
+	cursor pointer
+	&:hover
+		background url(../img/mute-icon.png)
+		background-size contain
+
+
+.mejs-controls .mejs-unmute button
+	background url(../img/mute-icon.png)
+	background-size contain
+	cursor pointer
+	&:hover
+		background url(../img/unmute-icon.png)
+		background-size contain
+
+.mejs-controls div.mejs-horizontal-volume-slider
+	position: absolute;
+	top: 32px;
+	right: 80px;
+	cursor: pointer;
+	background #143125
+
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total
+	width: 100px;
+	height: 4px;
+
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current
+	position: absolute;
+	width: 0;
+	height: 4px;
+	top: 0px;
+	left: 1px;
+	background: #19e68c;
+
+.mejs-controls div.mejs-time-rail
+	width 400px
+
+.mejs-controls .mejs-time-total
+	padding: 5px 0
+
+
+.mejs-controls .mejs-time-rail 
+	span
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 5px;
+		left: 0;
+		top: 0;
+		cursor: pointer;
+
+.mejs-controls .mejs-time-rail .mejs-time-loaded
+	width: 0;
+	background: #353535;
+
+.mejs-controls .mejs-time-rail .mejs-time-current
+	width: 0;
+	background: #19e68c;
+
+.mejs-controls .mejs-time-rail .mejs-time-handle,
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 20px;
+	top: -4px;
+  //border-radius: 50%;
+	//background: #19e68c
+
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle
+	top: -2px
+
+.mejs-controls .mejs-time-rail .mejs-time-float
+	position: absolute;
+	display: none;
+	width: 33px;
+	height: 23px;
+	top: -26px;
+	margin-left: -17px;
+	background: #19e68c;
+
+.mejs-controls .mejs-time-rail .mejs-time-float-current
+	width: 33px;
+	display: block;
+	left: 0;
+	top: 4px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #666666;
+	text-align: center;

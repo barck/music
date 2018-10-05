@@ -1,0 +1,71 @@
+header 
+  margin-bottom 50px
+  @media(max-width 768px)
+    margin-bottom 10px
+  .container
+    @media(max-width 768px)
+      display flex
+      flex-wrap wrap
+      align-items center
+      justify-content space-between
+      padding 0 5px
+      padding-right 10px
+  form
+    width 40%
+    margin 0 auto
+    position relative
+    margin-top -20px
+    @media(max-width 768px)
+      margin 0
+      margin-top 0
+      width 65%
+    input
+      width 100%
+      background none
+      border none 
+      outline none 
+      border-bottom 1px solid #19e68c
+      color #19e68c
+      font-size 22px
+      line-height 46px
+      padding-left 10px
+      font-weight 100
+      @media(max-width 768px)
+        font-size 16px
+        line-height 35px
+        padding-left 5px
+        margin-top -10px
+    button
+      border: none;
+      height: 32px;
+      width: 32px;
+      position: absolute;
+      top: 10px;
+      right: -10px;
+      cursor: pointer;
+      background none 
+      border none 
+      outline none
+      @media(max-width 768px)
+        top -5px
+        right -5px
+      &:before
+        content: "\f002";
+        font-family: FontAwesome;
+        font-size: 22px;
+        color: #118e57
+        @media(max-width 768px)
+          font-size 16px
+
+.logo
+  @media(max-width 768px)
+    width 30%
+  img
+    margin-top 20px
+    width 200px
+    @media(max-width 768px)
+      width 100%
+      margin-top 0
+    &:hover
+      filter brightness(125%)
+

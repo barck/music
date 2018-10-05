@@ -1,0 +1,122 @@
+@import '../../../node_modules/normalize-styl/normalize.styl'
+@import './font_awesome'
+@import './header'
+@import './footer'
+@import './fonts'
+@import './tags'
+@import './song'
+@import './artist'
+@import './player'
+
+*
+  box-sizing border-box
+
+body
+  background #121212 url(../img/bg_pattern.png)
+  // background #121212
+  color #fff
+  font-family Roboto
+
+.wrapper
+  min-height: calc(100vh - 60px)
+
+.container
+  width 1000px
+  margin 0 auto
+  @media(max-width 768px)
+    width 100%
+    padding 0 10px
+
+h1
+  font-weight 100
+  color #118e57
+  margin-top 0
+  margin-bottom 25px
+
+.content
+  width 100%
+  .container
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    .main-content
+      width 640px
+    .sidebar
+      width 280px
+      .tags-head
+        margin-left 10px
+      .sidebar-cat
+        margin-top 15px
+        margin-bottom 40px
+      .sidebar-tag-item
+        display flex
+        flex-wrap wrap
+        justify-content space-between
+        align-items center
+        width 100%
+        cursor pointer
+        margin-bottom 10px
+        // background rgba(31, 31, 31, 0.53)
+        // border-radius 5px
+        padding 5px 10px
+        &:hover
+          // background #108e57
+          background rgba(26,229,140,0.05);
+        &:hover .tag-title
+          color #b1b1b1
+        &:hover .tag-new
+          background url(../img/icons/acoustic-hover.png)
+          background-size contain
+        &:hover .tag-radio
+          background url(../img/icons/vocal-hover.png)
+          background-size contain
+        &:hover .tag-club
+          background url(../img/icons/edm-hover.png)
+          background-size contain
+        &:hover .tag-100club
+          background url(../img/icons/R&B-hover.png)
+          background-size contain
+        &:hover .tag-ost
+          background url(../img/icons/romantic-hover.png)
+          background-size contain
+        &:hover .tag-sport
+          background url(../img/icons/excercise-hover.png)
+          background-size contain
+        .tag-icon
+          width 30px
+          height 30px
+          display inline-block
+        .tag-radio
+          background url(../img/icons/vocal.png)
+          background-size contain
+        .tag-new
+          background url(../img/icons/acoustic.png)
+          background-size contain
+        .tag-club
+          background url(../img/icons/edm.png)
+          background-size contain
+        .tag-100club
+          background url(../img/icons/R&B.png)
+          background-size contain
+        .tag-ost
+          background url(../img/icons/romantic.png)
+          background-size contain
+        .tag-sport
+          background url(../img/icons/excercise.png)
+          background-size contain
+        .tag-title
+          width 80%
+          color #108e57
+          font-size 16px
+          font-weight 100
+      .about-us
+        margin-top 40px
+        .tags-head
+          margin-left 0
+        p
+          margin 0
+          margin-top 5px
+          font-size 16px
+          font-weight 100
+          line-height 24px
+          color #7b7b7b

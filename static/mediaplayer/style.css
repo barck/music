@@ -1,0 +1,160 @@
+.audio-player,
+.audio-player div,
+.audio-player .player-title,
+.audio-player a,
+.audio-player img,
+.audio-player span,
+.audio-player button {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+div.audio-player {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+	background: #000;
+}
+
+/* Title */
+.audio-player .player-title {
+	position: absolute;
+	top: 37px;
+	left: 165px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: #ececec;
+}
+
+/* Cover */
+.audio-player .cover {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	height: 75px;
+}
+
+/* Buttons */
+.mejs-controls .mejs-button button {
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	text-indent: -9999px;
+}
+
+/* Play & Pause */
+.mejs-controls .mejs-play button,
+.mejs-controls .mejs-pause button {
+	width: 21px;
+	height: 21px;
+	top: 35px;
+	left: 135px;
+	background: red;
+}
+
+.mejs-controls .mejs-pause button { background-position:0 -21px; }
+
+/* Mute & Unmute */
+.mejs-controls .mejs-mute button,
+.mejs-controls .mejs-unmute button {
+	width: 14px;
+	height: 12px;
+	top: 40px;
+	left: 310px;
+	background: red;
+}
+
+.mejs-controls .mejs-unmute button { background-position: 0 -12px; }
+
+/* Volume Slider */
+.mejs-controls div.mejs-horizontal-volume-slider {
+	position: absolute;
+	top: 41px;
+	left: 365px;
+	cursor: pointer;
+}
+
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+	width: 200px;
+	height: 8px;
+	background: #212227;
+	box-shadow: inset 0px 1px 0px rgba(0,0,0, .3), 0px 1px 0px rgba(255,255,255, .25);
+}
+
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+	position: absolute;
+	width: 0;
+	height: 6px;
+	top: 1px;
+	left: 1px;
+	background: #19e68c;
+}
+
+/* Progress Slider */
+.mejs-controls div.mejs-time-rail { width: 400px; }
+
+.mejs-controls .mejs-time-total { 
+	padding: 5px 0;
+}
+
+.mejs-controls .mejs-time-rail span {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 5px;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-loaded {
+	width: 0;
+	background: #353535;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-current {
+	width: 0;
+	background: #19e68c;
+}
+
+/* Volume Slider & Progress Bar Handle */
+.mejs-controls .mejs-time-rail .mejs-time-handle,
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle {
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 20px;
+	top: -4px;
+/*	border-radius: 50%;
+	background: #19e68c*/
+}
+
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle { top: -2px; }
+
+/* Time Float Box */
+.mejs-controls .mejs-time-rail .mejs-time-float {
+	position: absolute;
+	display: none;
+	width: 33px;
+	height: 23px;
+	top: -26px;
+	margin-left: -17px;
+	background: blue;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-float-current {
+	width: 33px;
+	display: block;
+	left: 0;
+	top: 4px;
+
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #666666;
+	text-align: center;
+}
